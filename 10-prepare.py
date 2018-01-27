@@ -57,3 +57,31 @@ for i in range(100):
 for pair in pairs:
   x, y = pair
   print(x, y)
+
+# リサージュ曲線
+pairs = []
+for i in range(100):
+  theta = i/20.0
+  a = 1
+  x = a * math.sin(3. * theta + 0.0)
+  y = a * math.cos(4. * theta)
+  pairs.append( (x, y) )
+
+for pair in pairs:
+  x, y = pair
+  print(x, y)
+
+# インボリュート
+pairs = []
+for i in range(100):
+  theta = i/20.0
+  a = 1
+  x = math.cos(theta) + theta * math.sin(theta)
+  y = math.sin(theta) - theta * math.cos(theta)
+  pairs.append( (x, y) )
+
+for pair in pairs:
+  x, y = pair
+  print(x, y)
+
+
