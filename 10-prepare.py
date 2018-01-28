@@ -18,15 +18,16 @@ for i in range(-100000,100000):
   y = a * ( 1. - math.cos(theta) )
   pairs.append( (x, y) )
 
-Xs, ys = [], []
+datasets = []
 for i in range(len(pairs)-10):
-  X = [y for x,y in pairs[i:i+9]]
-  x, y = pairs[i+9]
-  Xs.append(X)
-  ys.append(y)
+  X1 = [[y] for x,y in pairs[i:i+9]]
+  X2 = [[x] for x,y in pairs[i:i+9]]
+  y = list(pairs[i+9])[1]
+  datasets.append( (X1, X2, y) )
 
-open('サイクロイド.pkl', 'wb').write( pickle.dumps( (Xs, ys) ) )
+open('サイクロイド.pkl', 'wb').write( pickle.dumps( datasets ) )
 sys.exit()
+
 # アステロイド
 pairs = []
 for i in range(100):
