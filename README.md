@@ -63,3 +63,10 @@ $ python3 20-train-cicloid.py --predict
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/35494768-36a95716-0500-11e8-9da5-58bb5a1dee6f.png">
 </p>
 <div align="center"> 図5. 予想したサイクロイド</div>
+
+## アステロイド
+アステロイドはこのように表現され、一定の大きさよりは大きくなりません
+<p align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35493641-4c4df17e-04f8-11e8-9a2c-3cb79a1245e6.png">
+</p>
+<div align="center"> 図6. アステロイド </div>
