@@ -59,3 +59,7 @@ trainで使用しなかったデータを使用して予想します
 ```console
 $ python3 20-train-cicloid.py --predict
 ```
+<p align="center">
+  <img width="350px" src="https://user-images.githubusercontent.com/4949982/35494768-36a95716-0500-11e8-9da5-58bb5a1dee6f.png">
+</p>
+<div align="center"> 図5. 予想したサイクロイド</div>
