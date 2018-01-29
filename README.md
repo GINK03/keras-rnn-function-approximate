@@ -74,3 +74,19 @@ $ python3 20-train-cicloid.py --predict
 <p align="center">
   <img width="150px" src="https://user-images.githubusercontent.com/4949982/35494859-dc3faa68-0500-11e8-8df9-1d8d6b8c7565.png">
 </p>
+**学習**
+
+```console
+$ python3 20-train-asteroid.py --train
+```
+**評価** 
+
+trainで使用しなかったデータを使用して予想します
+
+```console
+$ python3 20-train-asteroid.py --predict
+```
+<p align="center">
+  <img width="350px" src="https://user-images.githubusercontent.com/4949982/35494768-36a95716-0500-11e8-9da5-58bb5a1dee6f.png">
+</p>
+<div align="center"> 図6. 予想したアステロイド</div>
