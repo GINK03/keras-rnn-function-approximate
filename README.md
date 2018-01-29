@@ -10,3 +10,7 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
 </p>
 <div align="center"> 図1. アステロイド（うまくいく） </div>
 
+<p align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35493714-b94d6750-04f8-11e8-90f7-bbc5cf321afd.png">
+</p>
+<div align="center"> 図2. 二次関数（うまくいかない）</div>
