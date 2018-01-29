@@ -30,3 +30,4 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
 <p align="center">
   <img width="650px" src="https://user-images.githubusercontent.com/4949982/35494326-35866728-04fd-11e8-9cdc-400c5e11d63b.png">
 </p>
+<div align="center"> 図3. 作成したネットワーク(RNNのAutoEncoderモデルを参考に作成)</div>
