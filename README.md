@@ -46,12 +46,16 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494665-75d8936c-04ff-11e8-85b0-55b396437d52.png">
 </p>
+
 **学習**
+
 ```console
 $ python3 20-train-cicloid.py --train
 ```
 **評価** 
+
 trainで使用しなかったデータを使用して予想します
+
 ```console
 $ python3 20-train-cicloid.py --predict
 ```
