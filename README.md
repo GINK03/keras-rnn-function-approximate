@@ -54,8 +54,7 @@ $ python3 20-train-cicloid.py --train
 ```
 **評価** 
 
-trainで使用しなかったデータを使用して予想します
-
+trainで使用しなかったデータを使用して予想
 ```console
 $ python3 20-train-cicloid.py --predict
 ```
@@ -94,7 +93,7 @@ $ python3 20-train-asteroid.py --predict
 <div align="center"> 図7. 予想したアステロイド(たまにドロップする)</div>
 
 ## 対数らせん
-対数らせんはこのように表現されます。無限におおきくなるので、媒介変数thetaを一定の大きさでストップします
+対数らせんはこのように表現されます。無限に大きくなるので、媒介変数thetaを一定の大きさでストップします
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35495016-f27ef12a-0501-11e8-885c-7b89344ceb5e.png">
 </p>
@@ -104,3 +103,10 @@ $ python3 20-train-asteroid.py --predict
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35495436-409791da-0504-11e8-926d-51bd03791d90.png">
 </p>
+
+**対数らせんの図** 
+
+<p align="center">
+  <img width="350px" src="https://user-images.githubusercontent.com/4949982/35495762-cbd8ee78-0505-11e8-859e-54b1dc345c08.png">
+</p>
+<div align="center"> 図7. 予想したアステロイド(たまにドロップする)</div>
