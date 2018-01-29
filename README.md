@@ -42,4 +42,7 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494551-a23e20a8-04fe-11e8-915d-77395a8f2f9f.png">
 </p>
 <div align="center"> 図4. サイクロイド</div>
-媒介変数はこのようになります
+媒介変数をもちいた表現はこのようになります
+<p align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494665-75d8936c-04ff-11e8-85b0-55b396437d52.png">
+</p>
