@@ -70,3 +70,7 @@ $ python3 20-train-cicloid.py --predict
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35493641-4c4df17e-04f8-11e8-9a2c-3cb79a1245e6.png">
 </p>
 <div align="center"> 図6. アステロイド </div>
+媒介変数をもちいた表現はこのようになります
+<p align="center">
+  <img width="150px" src="https://user-images.githubusercontent.com/4949982/35494859-dc3faa68-0500-11e8-8df9-1d8d6b8c7565.png">
+</p>
