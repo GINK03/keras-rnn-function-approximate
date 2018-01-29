@@ -23,3 +23,10 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
   <img width="450px" src="https://user-images.githubusercontent.com/4949982/35493888-eedf8082-04f9-11e8-8d61-c02ea2047458.png">
 </p>
 
+ディープラーニングで適切なFを決定することで、次の系列のX,Yが予想可能になります  
+
+## ネットワークで表現する
+ディープラーニングのネットワークではこのように表せるように思います
+<p align="center">
+  <img width="650px" src="https://user-images.githubusercontent.com/4949982/35494326-35866728-04fd-11e8-9cdc-400c5e11d63b.png">
+</p>
