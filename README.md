@@ -38,5 +38,8 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
 
 ## サイクロイド
 サイクロイドはこのような図形になます
-
+<p align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494551-a23e20a8-04fe-11e8-915d-77395a8f2f9f.png">
+</p>
+<div align="center"> 図4. サイクロイド</div>
 媒介変数はこのようになります
