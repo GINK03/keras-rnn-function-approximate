@@ -99,3 +99,8 @@ $ python3 20-train-asteroid.py --predict
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35495016-f27ef12a-0501-11e8-885c-7b89344ceb5e.png">
 </p>
 <div align="center"> 図8. 対数らせん</div>
+
+媒介変数を用いた表現はこのようになります
+<p align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35495436-409791da-0504-11e8-926d-51bd03791d90.png">
+</p>
