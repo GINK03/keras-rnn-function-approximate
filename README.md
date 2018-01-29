@@ -109,4 +109,9 @@ $ python3 20-train-asteroid.py --predict
 <p align="center">
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/35495762-cbd8ee78-0505-11e8-859e-54b1dc345c08.png">
 </p>
-<div align="center"> 図7. 予想したアステロイド(たまにドロップする)</div>
+<div align="center"> 図9. 予想すした対数らせん（微妙に歪んでいる）</div>
+
+## まとめ
+- いろいろな媒介変数でないと表現が難しい関数をy = f(x)でない、系列予想の問題設定とすることで予想することができそうだとわかりました
+- とにかく時系列でもなんでも連続した事象でパラメタライズできるのであれば、予想が可能そうです
+- 応用範囲は関数近似が既存のタスクでむずかしかった領域全体に広がり、有益そうです
