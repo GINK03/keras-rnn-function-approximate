@@ -72,13 +72,15 @@ $ python3 20-train-cicloid.py --predict
 <div align="center"> 図6. アステロイド </div>
 媒介変数をもちいた表現はこのようになります
 <p align="center">
-  <img width="150px" src="https://user-images.githubusercontent.com/4949982/35494859-dc3faa68-0500-11e8-8df9-1d8d6b8c7565.png">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494859-dc3faa68-0500-11e8-8df9-1d8d6b8c7565.png">
 </p>
+
 **学習**
 
 ```console
 $ python3 20-train-asteroid.py --train
 ```
+
 **評価** 
 
 trainで使用しなかったデータを使用して予想します
