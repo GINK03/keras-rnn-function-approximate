@@ -83,18 +83,17 @@ open('対数らせん.pkl', 'wb').write( pickle.dumps( datasets ) )
 # リサージュ曲線
 pairs = []
 for i in range(-100000,100000):
-  theta = i/1000.0
-  a = 1
+  theta = i/1
+  a = 50
   x = a * math.sin(3. * theta + 0.0)
-  y = a * math.cos(4. * theta)
-  pairs.append( (x, y) )
+  y = a * math.sin(4. * theta)
+  pairs.append( (theta, x, y) )
 
 datasets = []
 for i in range(len(pairs)-10):
-  X1 = [y for x,y in pairs[i:i+9]]
-  X2 = [y for x,y in pairs[i:i+9]]
-  y = list(pairs[i+9])
-  datasets.append( (X1, X2, y) )
+  X1 = pairs[i+8][0] 
+  y = list(pairs[i+9][1:3])
+  datasets.append( (X1, y) )
 open('リサージュ曲線.pkl', 'wb').write( pickle.dumps( datasets ) )
 
 
