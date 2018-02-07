@@ -7,13 +7,13 @@ DeepLearningでは内部的に微分は取っていますが、関数解析の�
 
 関数解析の理論は膨大ですが、理論自体はきれいに整理されており、以下の資料と文庫で確認しています  
 
-- [1][関数解析入門](https://www.math.nagoya-u.ac.jp/~yamagami/teaching/functional/hilbert2012.pdf) 
-- [2][位相のこころ-ちくま学芸文庫](https://www.amazon.co.jp/%E4%BD%8D%E7%9B%B8%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D-%E3%81%A1%E3%81%8F%E3%81%BE%E5%AD%A6%E8%8A%B8%E6%96%87%E5%BA%AB-%E6%A3%AE-%E6%AF%85/dp/4480089578/ref=cm_cr_arp_d_product_top?ie=UTF8)
+- [関数解析入門](https://www.math.nagoya-u.ac.jp/~yamagami/teaching/functional/hilbert2012.pdf) 
+- [位相のこころ-ちくま学芸文庫](https://www.amazon.co.jp/%E4%BD%8D%E7%9B%B8%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D-%E3%81%A1%E3%81%8F%E3%81%BE%E5%AD%A6%E8%8A%B8%E6%96%87%E5%BA%AB-%E6%A3%AE-%E6%AF%85/dp/4480089578/ref=cm_cr_arp_d_product_top?ie=UTF8)
 
 ## Function Approximateの方法はいくつかあって、RNNで表現できるケース
 
 RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予想することができます。  
-この時、単調増加のような形態を伴っていないことが望ましく、一定の再帰性があると収束しやすいです。(発散する関数は予想が発散領域に近づくにつれ、難しくなります)
+この時、連続であることが望ましく、無限小、無限大を取らないような、一定の再帰性があると収束しやすいです。(発散する関数は予想が大きくなるに近づくにつれ、難しくなります)
 
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35493641-4c4df17e-04f8-11e8-9a2c-3cb79a1245e6.png">
