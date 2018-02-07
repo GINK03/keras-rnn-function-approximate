@@ -100,7 +100,7 @@ $ python3 20-train-asteroid.py --predict
 <p align="center">
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/35494923-589bdeba-0501-11e8-8bd4-2e0cb56cacbf.png">
 </p>
-<div align="center"> 図7. 予想したアステロイド(たまにドロップする)</div>
+<div align="center"> 図7. 予想したアステロイド(たまにyが0にドロップする)</div>
 
 ## 対数らせん
 対数らせんはこのように表現されます。無限に大きくなるので、媒介変数thetaを一定の大きさでストップします
