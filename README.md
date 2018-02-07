@@ -1,5 +1,15 @@
 # RNNなどで関数を近似します
 
+## 関数解析
+DeepLearningでは内部的に微分は取っていますが、関数解析の理論などをあまり意識しなくても任意の連続する関数を再現可能です。  
+
+ディープラーニングは無限やかなり大きな値を扱うことは難しく、適切にフィットしない問題があります。 
+
+関数解析の理論は膨大ですが、理論自体はきれいに整理されており、以下の資料と文庫で確認しています  
+
+- [1][関数解析入門](https://www.math.nagoya-u.ac.jp/~yamagami/teaching/functional/hilbert2012.pdf) 
+- [2][位相のこころ-ちくま学芸文庫](https://www.amazon.co.jp/%E4%BD%8D%E7%9B%B8%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D-%E3%81%A1%E3%81%8F%E3%81%BE%E5%AD%A6%E8%8A%B8%E6%96%87%E5%BA%AB-%E6%A3%AE-%E6%AF%85/dp/4480089578/ref=cm_cr_arp_d_product_top?ie=UTF8)
+
 ## Function Approximateの方法はいくつかあって、RNNで表現できるケース
 
 RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予想することができます。  
