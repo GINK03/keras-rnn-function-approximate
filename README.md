@@ -10,6 +10,7 @@
 - [関数解析入門](https://www.math.nagoya-u.ac.jp/~yamagami/teaching/functional/hilbert2012.pdf) 
 - [位相のこころ-ちくま学芸文庫](https://www.amazon.co.jp/%E4%BD%8D%E7%9B%B8%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D-%E3%81%A1%E3%81%8F%E3%81%BE%E5%AD%A6%E8%8A%B8%E6%96%87%E5%BA%AB-%E6%A3%AE-%E6%AF%85/dp/4480089578/ref=cm_cr_arp_d_product_top?ie=UTF8)
 
+
 ## 様々な関数をDeepLearingのRNNで近似する
 
 RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予想することができます。  
@@ -125,3 +126,6 @@ $ python3 20-train-asteroid.py --predict
 - いろいろな媒介変数でないと表現が難しい関数をy = f(x)でない、系列予想の問題設定とすることで簡単に予想することができそうだとわかりました
 - とにかく時系列でもなんでも連続した数字として表現できるのであれば、予想が可能そうです
 - 仮定や解析プロセスを挟まずに学習＆予想することができるので、楽です  
+
+## 参考文献
+- [1][よくわかる関数解析。](http://watanabeckeiich.hatenablog.com/entry/2017/09/01/202658)
