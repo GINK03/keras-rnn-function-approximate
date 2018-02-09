@@ -10,6 +10,7 @@
 - [関数解析入門](https://www.math.nagoya-u.ac.jp/~yamagami/teaching/functional/hilbert2012.pdf) 
 - [位相のこころ-ちくま学芸文庫](https://www.amazon.co.jp/%E4%BD%8D%E7%9B%B8%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D-%E3%81%A1%E3%81%8F%E3%81%BE%E5%AD%A6%E8%8A%B8%E6%96%87%E5%BA%AB-%E6%A3%AE-%E6%AF%85/dp/4480089578/ref=cm_cr_arp_d_product_top?ie=UTF8)
 
+蛇足かもしれませんが理解が難しい内容は様々な文献を組み合わせて理解することでなんとか言わんとしていることを捉えていきました  
 
 ## 様々な関数をDeepLearingのRNNで近似する
 
@@ -150,3 +151,4 @@ $ python3 20-train-asteroid.py --predict
 ## 参考文献
 - [1][よくわかる関数解析。](http://watanabeckeiich.hatenablog.com/entry/2017/09/01/202658)  
 - [2][コンパクト空間](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E7%A9%BA%E9%96%93)
+- [3][ヒルベルト空間](https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93)
