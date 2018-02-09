@@ -1,4 +1,5 @@
 # RNNで関数近似
+DeepLearningの一種であるRNNで、任意の関数を学習させて、未知の任意の点で予想できることを示したいと思います。  
 
 ## 始める前に諸々調査したこと
 ディープラーニングで任意の連続する関数を再現可能です。  
@@ -12,6 +13,13 @@
 
 蛇足かもしれませんが理解が難しい内容は様々な文献を組み合わせて理解することでなんとか言わんとしていることを捉えていきました  
 
+また、もっと有機的な人間的な特徴を学習と予想を行う問題として、[sketch-rnn](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)というrnnで最初の一部だけを書き、学習した内容で残りを予想するという問題設定もあって面白くユニークです
+
+<p align="center">
+  <img width="300px" src="https://user-images.githubusercontent.com/4949982/36018890-b4cb78f4-0dc0-11e8-9720-1f0cf7e00958.png">
+</p>
+<div align="center"> 図1. 関数近似もスケッチの特徴を学び学習するのも一緒な気がします </div>
+
 ## 様々な関数をDeepLearingのRNNで近似する
 
 RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予想することができます。  
@@ -20,12 +28,12 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35493641-4c4df17e-04f8-11e8-9a2c-3cb79a1245e6.png">
 </p>
-<div align="center"> 図1. アステロイド（うまくいく） </div>
+<div align="center"> 図2. アステロイド（うまくいく） </div>
 
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35493714-b94d6750-04f8-11e8-90f7-bbc5cf321afd.png">
 </p>
-<div align="center"> 図2. 二次関数（うまくいかない）</div>
+<div align="center"> 図3. 二次関数（うまくいかない）</div>
 
 ## 数式で表現する
 ディープラーニングのRNNのEncoder-Decoderの一つの機能の粒度を関数として表現すると、このように表現することができると思います。  
@@ -41,7 +49,7 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
 <p align="center">
   <img width="650px" src="https://user-images.githubusercontent.com/4949982/35494326-35866728-04fd-11e8-9cdc-400c5e11d63b.png">
 </p>
-<div align="center"> 図3. 作成したネットワーク(RNNのAutoEncoderモデルを参考に作成)</div>
+<div align="center"> 図4. 作成したネットワーク(RNNのAutoEncoderモデルを参考に作成)</div>
 
 このネットワークは特に媒介変数がないと表現できないようなネットワークについて高い力を発揮しそうだと考えました。
 
@@ -52,7 +60,7 @@ RNNはn-1からn-mまでの情報を特徴量にnの系列でのデータを予�
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494551-a23e20a8-04fe-11e8-915d-77395a8f2f9f.png">
 </p>
-<div align="center"> 図4. サイクロイド</div>
+<div align="center"> 図5. サイクロイド</div>
 媒介変数をもちいた表現はこのようになります
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494665-75d8936c-04ff-11e8-85b0-55b396437d52.png">
@@ -72,14 +80,14 @@ $ python3 20-train-cicloid.py --predict
 <p align="center">
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/35494768-36a95716-0500-11e8-9da5-58bb5a1dee6f.png">
 </p>
-<div align="center"> 図5. 予想したサイクロイド</div>
+<div align="center"> 図6. 予想したサイクロイド</div>
 
 ## アステロイド
 アステロイドはこのように表現され、一定の大きさよりは大きくなりません
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35493641-4c4df17e-04f8-11e8-9a2c-3cb79a1245e6.png">
 </p>
-<div align="center"> 図6. アステロイド </div>
+<div align="center"> 図7. アステロイド </div>
 媒介変数をもちいた表現はこのようになります
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35494859-dc3faa68-0500-11e8-8df9-1d8d6b8c7565.png">
@@ -101,14 +109,14 @@ $ python3 20-train-asteroid.py --predict
 <p align="center">
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/35494923-589bdeba-0501-11e8-8bd4-2e0cb56cacbf.png">
 </p>
-<div align="center"> 図7. 予想したアステロイド(たまにyが0にドロップする)</div>
+<div align="center"> 図8. 予想したアステロイド(たまにyが0にドロップする)</div>
 
 ## 対数らせん
 対数らせんはこのように表現されます。無限に大きくなるので、媒介変数thetaを一定の大きさでストップします
 <p align="center">
   <img width="200px" src="https://user-images.githubusercontent.com/4949982/35495016-f27ef12a-0501-11e8-885c-7b89344ceb5e.png">
 </p>
-<div align="center"> 図8. 対数らせん</div>
+<div align="center"> 図9. 対数らせん</div>
 
 媒介変数を用いた表現はこのようになります
 <p align="center">
@@ -120,7 +128,7 @@ $ python3 20-train-asteroid.py --predict
 <p align="center">
   <img width="350px" src="https://user-images.githubusercontent.com/4949982/35495762-cbd8ee78-0505-11e8-859e-54b1dc345c08.png">
 </p>
-<div align="center"> 図9. 予想すした対数らせん（微妙に歪んでいる）</div>
+<div align="center"> 図10. 予想すした対数らせん（微妙に歪んでいる）</div>
 
 ## コード説明
 **10-prepare.py**  
