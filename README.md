@@ -154,3 +154,4 @@ $ python3 20-train-asteroid.py --predict
 
 ## 参考文献
 - [1] [magenta.org](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)
+- [2] [Universal Function Approximation using TensorFlow](http://deliprao.com/archives/100)
