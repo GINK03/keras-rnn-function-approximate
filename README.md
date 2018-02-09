@@ -13,14 +13,14 @@ DeepLearningの一種であるRNNで、任意の関数を学習させて、未�
 
 蛇足かもしれませんが理解が難しい内容は様々な文献を組み合わせて理解することでなんとか言わんとしていることを捉えていきました  
 
-また、もっと有機的な人間的な特徴を学習と予想を行う問題として、[sketch-rnn](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)というrnnで最初の一部だけを書き、学習した内容で残りを予想するという問題設定もあって面白くユニークです
+また、もっと有機的で人間的な特徴を学習と予想を行う問題として、[sketch-rnn](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)というrnnで最初の一部だけを描き、学習した内容で残りを予想するという問題設定もあって面白くユニークです
 
 <p align="center">
   <img width="300px" src="https://user-images.githubusercontent.com/4949982/36018890-b4cb78f4-0dc0-11e8-9720-1f0cf7e00958.png">
 </p>
 <div align="center"> 図1. 関数近似もスケッチの特徴を学び学習するのも一緒な気がします </div>
 
-耳だけ描くと、残りの部分が自動的に機械学習の結果により描かれます  
+耳だけ描くと、残りの部分が自動的に機械学習の予想結果により描かれます  
 
 ## 様々な関数をDeepLearingのRNNで近似する
 
