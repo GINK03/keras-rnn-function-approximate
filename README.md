@@ -6,14 +6,7 @@ DeepLearningの一種であるRNNで、任意の関数を学習させて、十�
 
 しかし、ディープラーニングは無限やかなり大きな値を扱うことは難しく、適切にフィットしない問題があります。無限大に発散しない（発散してもいいけど、目的とする値をなにか閉域に限定して変換する操作を行う）必要があります    
 
-従来からある洗練された手法として、関数解析という分野があり、ディープラーニングは登場しませんが、理論自体はきれいに整理されており、以下の資料と文庫で基礎的なことを確認することができます  
-
-- [関数解析入門](https://www.math.nagoya-u.ac.jp/~yamagami/teaching/functional/hilbert2012.pdf) 
-- [位相のこころ-ちくま学芸文庫](https://www.amazon.co.jp/%E4%BD%8D%E7%9B%B8%E3%81%AE%E3%81%93%E3%81%93%E3%82%8D-%E3%81%A1%E3%81%8F%E3%81%BE%E5%AD%A6%E8%8A%B8%E6%96%87%E5%BA%AB-%E6%A3%AE-%E6%AF%85/dp/4480089578/ref=cm_cr_arp_d_product_top?ie=UTF8)
-
-蛇足かもしれませんが理解が難しい内容は様々な文献を組み合わせて理解することでなんとか言わんとしていることを捉えていきました  
-
-また、もっと有機的で人間的な特徴を学習と予想を行う問題として、[sketch-rnn](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)というrnnで最初の一部だけを描き、学習した内容で残りを予想するという問題設定もあって面白くユニークです
+もっと有機的で人間的な特徴を学習と予想を行う問題として、[sketch-rnn](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)というrnnで最初の一部だけを描き、学習した内容で残りを予想するという問題設定もあって面白くユニークです
 
 <p align="center">
   <img width="300px" src="https://user-images.githubusercontent.com/4949982/36018890-b4cb78f4-0dc0-11e8-9720-1f0cf7e00958.png">
@@ -157,8 +150,7 @@ $ python3 20-train-asteroid.py --predict
 - いろいろな媒介変数でないと表現が難しい関数をy = f(x)でない、系列予想の問題設定とすることで簡単に予想することができそうだとわかりました
 - とにかく時系列でもなんでも連続した数字として表現できるのであれば、（モデルが十分に大きければ）予想が可能そうです
 - 仮定や解析プロセスを挟まずに学習＆予想することができるので、楽です  
+- 実は関数解析を結構調べたのですが数学的知識の背景は強化されましたが、今回のモデルには参考にしている部分は少ないです
 
 ## 参考文献
-- [1][よくわかる関数解析。](http://watanabeckeiich.hatenablog.com/entry/2017/09/01/202658)  
-- [2][コンパクト空間](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E7%A9%BA%E9%96%93)
-- [3][ヒルベルト空間](https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93)
+- [1] [magenta.org](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)
