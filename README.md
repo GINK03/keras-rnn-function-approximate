@@ -148,4 +148,5 @@ $ python3 20-train-asteroid.py --predict
 - 仮定や解析プロセスを挟まずに学習＆予想することができるので、楽です  
 
 ## 参考文献
-- [1][よくわかる関数解析。](http://watanabeckeiich.hatenablog.com/entry/2017/09/01/202658)
+- [1][よくわかる関数解析。](http://watanabeckeiich.hatenablog.com/entry/2017/09/01/202658)  
+- [2][コンパクト空間](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E7%A9%BA%E9%96%93)
